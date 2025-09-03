@@ -109,9 +109,9 @@ local function testFileSystemSecurity()
     local successRate = totalTests > 0 and math.floor((passedTests / totalTests) * 100 + 0.5) or 0
 
     -- Print professional test report
-    print("\n" .. string.rep("=", 60))
+    print("\n" .. string.rep("-", 60))
     print("File System Security Test Report")
-    print(string.rep("=", 60))
+    print(string.rep("-", 60))
     print("Tester: EtheonVisor")
     print("Test Time: " .. os.date("%Y-%m-%d %H:%M:%S"))
     print(string.rep("-", 60))
@@ -123,7 +123,7 @@ local function testFileSystemSecurity()
     print(" - Blacklist extension tests: " .. #blacklistExtensions)
     print(" - Safe extension tests: " .. #safeExtensions)
     print(" - Path traversal tests: " .. #pathTraversalTests)
-    print(string.rep("=", 60))
+    print(string.rep("-", 60))
 
     -- Provide security assessment
     if successRate >= 90 then
