@@ -5,7 +5,7 @@
           通过尝试创建不同类型的文件来验证安全策略是否正常工作，确保恶意文件无法被创建。
     版本: 1.0
     最后更新: 2025 九月
-
+Note: If you don't understand the script due to the chinese writtings please go to: https://raw.githubusercontent.com/EtheonVisor/TestScripts/refs/heads/main/BlackListedExtensionsTestEnglish.lua
 ]]
 
 local function 测试黑名单扩展名()
