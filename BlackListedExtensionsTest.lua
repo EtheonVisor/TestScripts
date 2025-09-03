@@ -106,9 +106,9 @@ local function 测试黑名单扩展名()
     local 成功率 = 总测试数 > 0 and math.floor((通过测试数 / 总测试数) * 100 + 0.5) or 0
     
     -- 打印专业测试报告
-    print("\n" .. string.rep("=", 60))
+    print("\n" .. string.rep("-", 60))
     print("文件系统安全测试报告")
-    print(string.rep("=", 60))
+    print(string.rep("-", 60))
     print("测试执行者: EtheonVisor")
     print("测试时间: " .. os.date("%Y-%m-%d %H:%M:%S"))
     print(string.rep("-", 60))
@@ -120,7 +120,7 @@ local function 测试黑名单扩展名()
     print("  - 黑名单扩展名测试: " .. #黑名单扩展名 .. " 项")
     print("  - 安全扩展名测试: " .. #安全扩展名 .. " 项")
     print("  - 路径遍历测试: " .. #路径遍历测试 .. " 项")
-    print(string.rep("=", 60))
+    print(string.rep("-", 60))
     
     -- 提供安全评估
     if 成功率 >= 90 then
