@@ -54,14 +54,14 @@ local function testMessageBox()
 
     local successRate = math.floor((passedTests / totalTests) * 100 + 0.5)
   
-    print("\n" .. string.rep("=", 50))
+    print("\n" .. string.rep("-", 50))
     print("MESSAGEBOX SUMMARY")
-    print(string.rep("=", 50))
+    print(string.rep("-", 50))
     print("✅ Tested with a " .. successRate .. "% success rate (" .. passedTests .. "/" .. totalTests .. ")")
     print("⛔ " .. failedTests .. " tests failed")
     print("⚠️ " .. undefinedTests .. " functions are undefined")
     print("📊 Total UI tests: " .. totalTests)
-    print(string.rep("=", 50))
+    print(string.rep("-", 50))
   print("Written by EtheonVisor")
     
     return successRate
